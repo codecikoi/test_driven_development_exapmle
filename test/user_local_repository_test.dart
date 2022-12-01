@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:dio/dio.dart';
 import 'package:mocktail/mocktail.dart';
@@ -11,12 +10,6 @@ import 'package:test_driven_development_example/repository_i/i_user_repository.d
 class MockDio extends Mock implements Dio {}
 
 void main() {
-
-  late MockDio = mockDio;
-
-  setUp(() {
-    mockDio = MockDio();
-  });
 
   test('get local user repository (success)', () async {
     LocalUserRepository localUserRepository = LocalUserRepository();

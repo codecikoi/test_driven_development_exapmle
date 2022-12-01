@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:test_driven_development_example/entities/user.dart';
 
@@ -41,7 +39,7 @@ void main() {
     });
     test('all params are correct', () {
       expect(user3.id, equals(1));
-      expect(user3.name, equals('test '));
+      expect(user3.name, equals('test'));
     });
   });
 }

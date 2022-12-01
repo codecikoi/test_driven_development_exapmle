@@ -2,8 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:test_driven_development_example/entities/user.dart';
-
-import 'user_local_repository_test.dart';
+import 'package:test_driven_development_example/repository/user_remote_repository.dart';
 
 class MockDio extends Mock implements Dio {}
 
@@ -54,7 +53,7 @@ void main() {
     );
     expect(
       user?.name,
-      equals('janet weaver'),
+      equals('Janet Weaver'),
     );
   });
 

@@ -4,6 +4,6 @@ import 'package:test_driven_development_example/repository_i/i_user_repository.d
 class LocalUserRepository implements IUserRepository {
   @override
   Future<User?> getUser(int id) async {
-    return User();
+    return User(id: id);
   }
 }
